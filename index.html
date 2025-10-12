@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Партнерское ESG-предложение: Велошеринг в Казани</title>
+    <title>Предложение о ESG-партнерстве</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -17,178 +17,173 @@
         .doughnut-chart-container {
             position: relative;
             width: 100%;
-            max-width: 400px;
+            max-width: 350px;
             margin-left: auto;
             margin-right: auto;
-            height: 300px;
-            max-height: 350px;
+            height: 350px;
         }
-        @media (max-width: 768px) {
-            .doughnut-chart-container {
-                height: 250px;
-            }
+        @media print {
+            @page { size: A4 portrait; margin: 2cm 1.5cm; }
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; font-size: 10pt; }
+            .no-print { display: none !important; }
+            section { margin: 0 !important; padding: 0.8rem 0 !important; }
+            header { margin-bottom: 2rem !important; }
+            h1 { font-size: 22pt !important; }
+            h2 { font-size: 18pt !important; margin-bottom: 1rem !important; }
+            h3 { font-size: 14pt !important; }
+            p, li { font-size: 10pt !important; }
+            .text-5xl { font-size: 2.5rem !important; }
+            #synergy, #health-impact, #timeline { page-break-before: always; }
+            .grid > div, #timeline > div > div { page-break-inside: avoid; }
         }
     </style>
 </head>
 <body class="text-gray-800">
-    <!-- Palette: Brilliant Blues Adaptation (#023E8A, #0077B6, #00B4D8, #CAF0F8, #ADE8F4) -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
-        <header class="text-center mb-16 flex flex-col md:flex-row items-center justify-center gap-6">
-            <div class="w-24 h-24 flex-shrink-0">
-                <!-- Placeholder Logo -->
-                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="50" r="48" fill="#009688"/>
-                    <path d="M50 25 V75 M30 50 H70" stroke="white" stroke-width="12" stroke-linecap="round"/>
-                </svg>
+        <!-- СТРАНИЦА 1 -->
+        <header class="mb-16 flex flex-col md:flex-row items-center justify-start gap-8">
+            <div class="flex-shrink-0">
+                <p style="font-family: 'Inter', sans-serif; font-size: 36px; font-weight: 500; line-height: 1; letter-spacing: -1.5px;">
+                    <span style="color: #3FAB3C;">green</span><span style="color: #212121;">bee</span>
+                </p>
             </div>
-            <div class="text-center md:text-left">
-                <h1 class="text-4xl md:text-5xl font-black text-[#023E8A] mb-2">Партнерство с "Татнефть"</h1>
-                <p class="text-xl text-[#0077B6] font-bold">Создайте Зеленое Будущее Казани</p>
+            <div class="text-center md:text-left border-l-2 border-gray-200 pl-8">
+                <h1 class="text-3xl md:text-4xl font-black text-[#004071] mb-1">Предложение о ESG-партнерстве</h1>
+                <p class="text-lg text-[#0073C0] font-bold">Совместная программа по улучшению городской среды</p>
             </div>
         </header>
 
         <section id="offer" class="mb-16">
-            <h2 class="text-4xl font-bold text-center mb-10 text-[#023E8A]">Предмет Партнерства: Измеримый Вклад</h2>
+            <h2 class="text-4xl font-bold text-center mb-10 text-[#004071]">Предмет партнерства: Пилотный проект</h2>
             <div class="bg-white rounded-xl shadow-lg p-8">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:divide-x md:divide-gray-200">
                     <div class="text-center px-4 flex flex-col items-center">
-                        <div class="w-16 h-16 mx-auto mb-4 text-[#0077B6]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-full h-full"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a2.25 2.25 0 00-2.25-2.25H15a3 3 0 11-6 0H5.25A2.25 2.25 0 003 12m18 0v6a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 9m12 3V9" /></svg></div>
-                        <p class="text-5xl font-black text-[#023E8A]">35.2М ₽</p>
-                        <p class="text-lg mt-2 text-gray-600">Вклад партнера (CAPEX)</p>
-                        <p class="mt-2 text-sm text-gray-500">На закупку 800 велосипедов, IT-платформу и операционный запуск.</p>
+                        <div class="w-16 h-16 mx-auto mb-4 text-[#0073C0]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-full h-full"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /></svg></div>
+                        <p class="text-5xl font-black text-[#004071]">35.2М ₽</p>
+                        <p class="text-lg mt-2 text-gray-600">Инвестиции в запуск (CAPEX)</p>
+                        <p class="mt-2 text-sm text-gray-500">На закупку 800 велосипедов, IT-платформу и операционный запуск пилотного проекта.</p>
                     </div>
                     <div class="text-center px-4 flex flex-col items-center">
-                        <div class="w-16 h-16 mx-auto mb-4 text-[#0077B6]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-full h-full"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 12a3 3 0 100-6 3 3 0 000 6z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 12l2.25 2.25m-4.5 0L12 12m0 0V7.5" /></svg></div>
-                        <p class="text-5xl font-black text-[#023E8A]">218т+</p>
-                        <p class="text-lg mt-2 text-gray-600">Поездок за первый сезон</p>
-                        <p class="mt-2 text-sm text-gray-500">Гарантированный социальный эффект и вовлечение жителей.</p>
+                        <div class="w-16 h-16 mx-auto mb-4 text-[#0073C0]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-full h-full"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a21.93 21.93 0 01-8.63-3.34 2.9 2.9 0 01-1.42-2.92c.16-1.45.64-2.83 1.42-4.1.42-.68.83-1.37 1.25-2.06.42-.7.83-1.4 1.25-2.1.42-.7.83-1.39 1.25-2.09.42-.7.83-1.39 1.25-2.08a21.93 21.93 0 0111.4 0c.42.7.83 1.38 1.25 2.08.42.7.83 1.39 1.25 2.1.42.7.83 1.38 1.25 2.09.42.67.83 1.36 1.25 2.06.78 1.27 1.26 2.65 1.42 4.1.06 1.09-.34 2.18-1.42 2.92A21.93 21.93 0 0112 21z" /></svg></div>
+                        <p class="text-5xl font-black text-[#004071]">140+ тонн</p>
+                        <p class="text-lg mt-2 text-gray-600">Снижение выбросов CO₂</p>
+                        <p class="mt-2 text-sm text-gray-500">Прямой вклад в достижение целей по снижению углеродного следа и улучшению экологии в регионах.</p>
                     </div>
                     <div class="text-center px-4 flex flex-col items-center">
-                        <div class="w-16 h-16 mx-auto mb-4 text-[#0077B6]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-full h-full"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.432 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg></div>
-                        <p class="text-5xl font-black text-[#023E8A]">5М+</p>
-                        <p class="text-lg mt-2 text-gray-600">Рекламных контактов</p>
-                        <p class="mt-2 text-sm text-gray-500">Прямой контакт с активной аудиторией через брендированный транспорт.</p>
+                        <div class="w-16 h-16 mx-auto mb-4 text-[#0073C0]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-full h-full"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.5-2.962a3.75 3.75 0 015.968 0m-11.938 0a3.75 3.75 0 015.968 0m-5.968 0a3.75 3.75 0 01-5.968 0m11.938 0c-2.43 0-4.63.85-6.335 2.298M12 9.75a3 3 0 110-6 3 3 0 010 6z" /></svg></div>
+                        <p class="text-5xl font-black text-[#004071]">50 000+</p>
+                        <p class="text-lg mt-2 text-gray-600">Вовлеченных жителей</p>
+                        <p class="mt-2 text-sm text-gray-500">Повышение качества жизни и поддержка здорового образа жизни для сотрудников и их семей.</p>
                     </div>
                 </div>
             </div>
         </section>
         
+        <!-- СТРАНИЦА 2 -->
         <section id="synergy" class="my-16 bg-white rounded-lg shadow-lg p-8">
-            <h2 class="text-4xl font-bold text-center mb-2 text-[#023E8A]">Синергия Партнерства: Двойной Эффект</h2>
-            <p class="text-lg text-center max-w-4xl mx-auto mb-10 text-gray-600">Проект создает уникальную ситуацию, где социальные цели города полностью совпадают с маркетинговыми и ESG-целями партнера.</p>
+            <h2 class="text-4xl font-bold text-center mb-2 text-[#004071]">Соответствие целям устойчивого развития</h2>
+            <p class="text-lg text-center max-w-4xl mx-auto mb-10 text-gray-600">Проект велошеринга напрямую работает на достижение ключевых ESG-приоритетов современного бизнеса, создавая измеримый социальный и экологический эффект.</p>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- City Value -->
                 <div>
-                    <h3 class="text-2xl font-bold text-center text-[#0077B6] mb-8">Ценность для Города</h3>
-                    <div class="space-y-6">
-                        <div><div class="flex justify-between items-center mb-2"><div class="flex items-center gap-3"><div class="w-8 h-8 text-[#00B4D8]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg></div><span class="text-base font-medium text-gray-700">Снижение пробок</span></div><span class="text-lg font-bold text-[#023E8A]">Индекс: 75%</span></div><div class="w-full bg-gradient-to-r from-cyan-200 to-sky-400 h-2.5 rounded-full"></div></div>
-                        <div><div class="flex justify-between items-center mb-2"><div class="flex items-center gap-3"><div class="w-8 h-8 text-[#00B4D8]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a21.93 21.93 0 01-8.63-3.34 2.9 2.9 0 01-1.42-2.92c.16-1.45.64-2.83 1.42-4.1.42-.68.83-1.37 1.25-2.06.42-.7.83-1.4 1.25-2.1.42-.7.83-1.39 1.25-2.09.42-.7.83-1.39 1.25-2.08a21.93 21.93 0 0111.4 0c.42.7.83 1.38 1.25 2.08.42.7.83 1.39 1.25 2.1.42.7.83 1.38 1.25 2.09.42.67.83 1.36 1.25 2.06.78 1.27 1.26 2.65 1.42 4.1.06 1.09-.34 2.18-1.42 2.92A21.93 21.93 0 0112 21z"/></svg></div><span class="text-base font-medium text-gray-700">Улучшение экологии</span></div><span class="text-lg font-bold text-[#023E8A]">Индекс: 95%</span></div><div class="w-full bg-gradient-to-r from-cyan-200 to-sky-400 h-2.5 rounded-full"></div></div>
-                        <div><div class="flex justify-between items-center mb-2"><div class="flex items-center gap-3"><div class="w-8 h-8 text-[#00B4D8]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /></svg></div><span class="text-base font-medium text-gray-700">Здоровье горожан</span></div><span class="text-lg font-bold text-[#023E8A]">Индекс: 85%</span></div><div class="w-full bg-gradient-to-r from-cyan-200 to-sky-400 h-2.5 rounded-full"></div></div>
-                        <div><div class="flex justify-between items-center mb-2"><div class="flex items-center gap-3"><div class="w-8 h-8 text-[#00B4D8]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.32 1.011l-4.194 4.105a.563.563 0 00-.163.506l1.24 5.385a.563.563 0 01-.84.61l-4.735-2.527a.563.563 0 00-.586 0l-4.735 2.527a.563.563 0 01-.84-.61l1.24-5.385a.563.563 0 00-.163-.506l-4.194-4.105a.563.563 0 01.32-1.011l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" /></svg></div><span class="text-base font-medium text-gray-700">Тур. привлекательность</span></div><span class="text-lg font-bold text-[#023E8A]">Индекс: 70%</span></div><div class="w-full bg-gradient-to-r from-cyan-200 to-sky-400 h-2.5 rounded-full"></div></div>
-                    </div>
+                    <h3 class="text-2xl font-bold text-center text-[#0073C0] mb-8">Ценность для Города</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start"><div class="w-6 h-6 text-green-500 mr-3 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a21.93 21.93 0 01-8.63-3.34 2.9 2.9 0 01-1.42-2.92c.16-1.45.64-2.83 1.42-4.1.42-.68.83-1.37 1.25-2.06.42-.7.83-1.4 1.25-2.1.42-.7.83-1.39 1.25-2.09.42-.7.83-1.39 1.25-2.08a21.93 21.93 0 0111.4 0c.42.7.83 1.38 1.25 2.08.42.7.83 1.39 1.25 2.1.42.7.83 1.38 1.25 2.09.42.67.83 1.36 1.25 2.06.78 1.27 1.26 2.65 1.42 4.1.06 1.09-.34 2.18-1.42 2.92A21.93 21.93 0 0112 21z"/></svg></div><div><h4 class="font-bold">Чистый воздух</h4><p class="text-gray-600">Снижение нагрузки на экологию за счет микромобильности.</p></div></li>
+                        <li class="flex items-start"><div class="w-6 h-6 text-green-500 mr-3 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /></svg></div><div><h4 class="font-bold">Здоровье жителей</h4><p class="text-gray-600">Популяризация активного образа жизни среди всех поколений.</p></div></li>
+                        <li class="flex items-start"><div class="w-6 h-6 text-green-500 mr-3 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg></div><div><h4 class="font-bold">Современная городская среда</h4><p class="text-gray-600">Развитие удобной и доступной транспортной инфраструктуры.</p></div></li>
+                    </ul>
                 </div>
-                <!-- Partner Value -->
                 <div>
-                    <h3 class="text-2xl font-bold text-center text-[#0077B6] mb-8">Ценность для Партнера</h3>
-                    <div class="space-y-6">
-                        <div><div class="flex justify-between items-center mb-2"><div class="flex items-center gap-3"><div class="w-8 h-8 text-[#023E8A]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.432 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg></div><span class="text-base font-medium text-gray-700">Видимость бренда</span></div><span class="text-lg font-bold text-[#023E8A]">Индекс: 90%</span></div><div class="w-full bg-gradient-to-r from-sky-300 to-blue-500 h-2.5 rounded-full"></div></div>
-                        <div><div class="flex justify-between items-center mb-2"><div class="flex items-center gap-3"><div class="w-8 h-8 text-[#023E8A]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286zm0 13.036h.008v.008h-.008v-.008z" /></svg></div><span class="text-base font-medium text-gray-700">Достижение ESG-целей</span></div><span class="text-lg font-bold text-[#023E8A]">Индекс: 95%</span></div><div class="w-full bg-gradient-to-r from-sky-300 to-blue-500 h-2.5 rounded-full"></div></div>
-                        <div><div class="flex justify-between items-center mb-2"><div class="flex items-center gap-3"><div class="w-8 h-8 text-[#023E8A]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.5-2.962a3.75 3.75 0 015.968 0m-11.938 0a3.75 3.75 0 015.968 0m-5.968 0a3.75 3.75 0 01-5.968 0m11.938 0c-2.43 0-4.63.85-6.335 2.298M12 9.75a3 3 0 110-6 3 3 0 010 6z" /></svg></div><span class="text-base font-medium text-gray-700">Лояльность аудитории</span></div><span class="text-lg font-bold text-[#023E8A]">Индекс: 85%</span></div><div class="w-full bg-gradient-to-r from-sky-300 to-blue-500 h-2.5 rounded-full"></div></div>
-                        <div><div class="flex justify-between items-center mb-2"><div class="flex items-center gap-3"><div class="w-8 h-8 text-[#023E8A]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg></div><span class="text-base font-medium text-gray-700">Вовлечение сотрудников</span></div><span class="text-lg font-bold text-[#023E8A]">Индекс: 70%</span></div><div class="w-full bg-gradient-to-r from-sky-300 to-blue-500 h-2.5 rounded-full"></div></div>
-                    </div>
+                    <h3 class="text-2xl font-bold text-center text-[#0073C0] mb-8">Ценность для Партнера</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start"><div class="w-6 h-6 text-blue-800 mr-3 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286zm0 13.036h.008v.008h-.008v-.008z" /></svg></div><div><h4 class="font-bold">Достижение ESG-целей</h4><p class="text-gray-600">Видимый и измеримый результат по направлениям «Экология» и «Социальная политика».</p></div></li>
+                        <li class="flex items-start"><div class="w-6 h-6 text-blue-800 mr-3 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.432 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg></div><div><h4 class="font-bold">Укрепление репутации</h4><p class="text-gray-600">Яркий социальный проект, демонстрирующий заботу о регионах присутствия.</p></div></li>
+                        <li class="flex items-start"><div class="w-6 h-6 text-blue-800 mr-3 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg></div><div><h4 class="font-bold">Вовлечение сотрудников</h4><p class="text-gray-600">Новая возможность для досуга и здорового образа жизни для персонала и их семей.</p></div></li>
+                    </ul>
                 </div>
             </div>
         </section>
-
-        <section id="social-impact" class="mb-16">
-            <h2 class="text-4xl font-bold text-center mb-10 text-[#023E8A]">Социальный Импакт Партнерства</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                 <div class="flex flex-col items-center">
-                    <h3 class="text-2xl font-bold text-center mb-4 text-[#0077B6]">Влияние на здоровье нации</h3>
+        
+        <!-- СТРАНИЦА 3 -->
+        <section id="health-impact" class="my-16">
+            <h2 class="text-4xl font-bold text-center mb-10 text-[#004071]">Социальный Импакт Партнерства</h2>
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold text-[#0073C0] mb-4">Влияние на здоровье нации</h3>
+                    <p class="text-base max-w-3xl mx-auto text-gray-600 mb-8">Регулярные велопрогулки — доказанный медицинскими исследованиями инструмент для предотвращения хронических заболеваний и укрепления здоровья.</p>
                     <div class="doughnut-chart-container">
                         <canvas id="healthImpactChart"></canvas>
                     </div>
-                    <div id="health-legend" class="flex flex-wrap justify-center gap-x-4 gap-y-2 mt-4"></div>
-                 </div>
-                <div class="text-center">
-                     <p class="text-7xl font-black text-[#0077B6]">70+</p>
-                     <p class="text-2xl mt-2 text-[#023E8A]">тонн CO₂</p>
-                     <p class="mt-2 text-gray-600">сокращение выбросов за сезон — ваш прямой вклад в экологию города.</p>
-                     <p class="text-xs text-gray-400 mt-4">*Расчет основан на замещении 40% поездок на автомобиле со средним пробегом 4 км.</p>
+                    <div id="health-legend" class="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6"></div>
+                </div>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                     <div>
+                        <h4 class="font-bold text-lg text-gray-800">Ключевые задачи, решаемые проектом:</h4>
+                        <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1">
+                            <li>Борьба с гиподинамией (малоподвижным образом жизни).</li>
+                            <li>Снижение уровня стресса и улучшение ментального здоровья.</li>
+                            <li>Профилактика сердечно-сосудистых заболеваний и диабета 2 типа.</li>
+                            <li>Формирование культуры здорового и активного образа жизни.</li>
+                        </ul>
+                    </div>
+                     <div>
+                        <h4 class="font-bold text-lg text-gray-800">Статистика и исследования:</h4>
+                        <p class="text-gray-600 mt-2">
+                           Согласно исследованию в <span class="font-semibold">British Medical Journal (BMJ)</span>, регулярная езда на велосипеде снижает риск смертности от всех причин на <span class="font-semibold">41%</span>, риск развития рака на <span class="font-semibold">45%</span> и сердечно-сосудистых заболеваний на <span class="font-semibold">46%</span>.
+                        </p>
+                        <p class="text-xs text-gray-400 mt-2">Источник: "Association between active commuting and incident cardiovascular disease, cancer, and mortality" (BMJ, 2017).</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="process" class="my-16">
-            <div class="bg-white rounded-lg shadow-md p-8">
-                 <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold text-[#0D1B2A]">Простота и Удобство: Как это Работает</h2>
-                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Интуитивно понятный процесс для пользователя — залог высокой вовлеченности и популярности сервиса.</p>
-                </div>
-                <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-2">
-                    <div class="flex-1 text-center p-4 bg-gray-100 rounded-lg shadow-sm">1. Найти на карте</div>
-                    <div class="text-2xl text-gray-300 font-sans">&rarr;</div>
-                    <div class="flex-1 text-center p-4 bg-gray-100 rounded-lg shadow-sm">2. Отсканировать QR-код</div>
-                    <div class="text-2xl text-gray-300 font-sans">&rarr;</div>
-                    <div class="flex-1 text-center p-4 bg-gray-100 rounded-lg shadow-sm">3. Совершить поездку</div>
-                    <div class="text-2xl text-gray-300 font-sans">&rarr;</div>
-                    <div class="flex-1 text-center p-4 bg-gray-100 rounded-lg shadow-sm">4. Завершить на парковке</div>
-                </div>
-            </div>
-        </section>
-        
+        <!-- СТРАНИЦА 4 -->
         <section id="timeline" class="my-16">
              <div class="bg-white rounded-lg shadow-md p-8 max-w-4xl mx-auto">
                  <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-[#0D1B2A]">Дорожная Карта Проекта</h2>
-                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Четкий план реализации обеспечивает своевременный запуск и поэтапное развитие проекта.</p>
+                    <h2 class="text-3xl font-bold text-[#0D1B2A]">Этапы долгосрочного партнерства</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Прозрачный план развития программы от пилотного запуска до полномасштабного развертывания.</p>
                 </div>
                 <div class="relative pl-8 border-l-2 border-sky-300">
                     <div class="mb-8 relative"><div class="absolute -left-10 w-4 h-4 bg-sky-500 rounded-full border-4 border-white shadow"></div>
-                        <h4 class="font-bold text-xl text-[#0D1B2A]">Этап 1: Подготовка (Q1 2026)</h4>
-                        <p class="text-gray-600">Формирование команды, подписание партнерских соглашений, заказ оборудования и разработка ПО.</p>
+                        <h4 class="font-bold text-xl text-[#0D1B2A]">Этап 1: Пилотный запуск (2026)</h4>
+                        <p class="text-gray-600">Развертывание инфраструктуры и запуск 800 велосипедов в одном из ключевых городов.</p>
                     </div>
                     <div class="mb-8 relative"><div class="absolute -left-10 w-4 h-4 bg-sky-500 rounded-full border-4 border-white shadow"></div>
-                        <h4 class="font-bold text-xl text-[#0D1B2A]">Этап 2: Запуск (Q2 2026)</h4>
-                        <p class="text-gray-600">Размещение 400 велосипедов в центральной части города. Широкая маркетинговая кампания.</p>
+                        <h4 class="font-bold text-xl text-[#0D1B2A]">Этап 2: Оценка и оптимизация (Начало 2027)</h4>
+                        <p class="text-gray-600">Сбор и анализ данных по итогам первого сезона, подготовка ESG-отчета, планирование расширения.</p>
                     </div>
                     <div class="mb-8 relative"><div class="absolute -left-10 w-4 h-4 bg-sky-500 rounded-full border-4 border-white shadow"></div>
-                        <h4 class="font-bold text-xl text-[#0D1B2A]">Этап 3: Расширение (Q3-Q4 2026)</h4>
-                        <p class="text-gray-600">Добавление еще 400 велосипедов, расширение сети парковок на спальные районы и парковые зоны.</p>
+                        <h4 class="font-bold text-xl text-[#0D1B2A]">Этап 3: Масштабирование (2027-2028)</h4>
+                        <p class="text-gray-600">Тиражирование успешной модели на другие города присутствия партнера.</p>
                     </div>
                     <div class="relative"><div class="absolute -left-10 w-4 h-4 bg-sky-500 rounded-full border-4 border-white shadow"></div>
-                        <h4 class="font-bold text-xl text-[#0D1B2A]">Этап 4: Оценка и Оптимизация (Q1 2027)</h4>
-                        <p class="text-gray-600">Анализ данных первого сезона, оптимизация расположения станций и планирование дальнейшего масштабирования.</p>
+                        <h4 class="font-bold text-xl text-[#0D1B2A]">Этап 4: Стратегическое развитие (2028+)</h4>
+                        <p class="text-gray-600">Расширение парка техники, интеграция с городской транспортной системой, запуск сопутствующих социальных инициатив.</p>
                     </div>
                 </div>
              </div>
         </section>
 
-        <section id="cta" class="bg-[#023E8A] rounded-lg shadow-2xl p-10">
-            <h2 class="text-4xl font-bold text-center mb-8 text-white">Давайте обсудим детали партнерства</h2>
-            <p class="text-center text-lg text-[#CAF0F8] max-w-3xl mx-auto mb-8">Мы готовы подготовить кастомизированное предложение, полностью отвечающее вашим ESG и маркетинговым целям.</p>
+        <section id="cta" class="bg-[#004071] rounded-lg shadow-2xl p-10 no-print">
+            <h2 class="text-4xl font-bold text-center mb-8 text-white">Предложение о стратегическом партнерстве</h2>
+            <p class="text-center text-lg text-[#bfe1ff] max-w-3xl mx-auto mb-8">Готовы предоставить финансовую модель и детальный план для запуска долгосрочной совместной программы по улучшению качества жизни в городах.</p>
             <div class="flex justify-center">
-                 <button class="bg-[#ADE8F4] text-[#023E8A] font-bold py-4 px-8 rounded-lg hover:bg-white transition-colors text-lg shadow-lg">Стать генеральным партнером проекта</button>
+                 <a href="https://t.me/greenbee_rf" target="_blank" rel="noopener noreferrer" class="no-underline">
+                    <button class="bg-white text-[#004071] font-bold py-4 px-8 rounded-lg text-lg shadow-lg hover:bg-gray-200 transition-colors duration-300">
+                        Обсудить партнерство в Telegram
+                    </button>
+                </a>
             </div>
         </section>
-
     </div>
-
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const fontFamily = "'Inter', sans-serif";
-            const textColor = '#023E8A';
-            const primaryColor = '#0077B6';
-            const secondaryColor = '#00B4D8';
-            const accentColor = '#ADE8F4';
-            
             const healthChartData = {
                 labels: [ 'Снижение риска болезней сердца', 'Снижение риска диабета', 'Улучшение ментального здоровья' ],
-                data: [50, 30, 20],
-                colors: [primaryColor, secondaryColor, accentColor]
+                data: [46, 20, 34],
+                colors: ['#004071', '#4D82B8', '#A0C4E4']
             };
-            
             const healthImpactCtx = document.getElementById('healthImpactChart');
             if(healthImpactCtx) {
                 new Chart(healthImpactCtx, {
@@ -196,7 +191,7 @@
                     data: {
                         labels: healthChartData.labels,
                         datasets: [{
-                            label: '% снижения риска',
+                            label: 'Снижение риска на',
                             data: healthChartData.data,
                             backgroundColor: healthChartData.colors,
                             borderColor: '#F8F9FA',
@@ -207,16 +202,16 @@
                     options: {
                         responsive: true,
                         maintainAspectRatio: false,
-                        cutout: '60%',
+                        cutout: '70%',
                         plugins: {
                             legend: { display: false },
-                             tooltip: {
+                            tooltip: {
                                 callbacks: {
                                     label: function(context) {
-                                        let label = context.label || '';
-                                        if (label) { label += ': '; }
+                                        let label = context.dataset.label || '';
+                                        if (label) { label = 'Снижение риска: '; }
                                         if (context.parsed !== null) { label += context.parsed + '%'; }
-                                        return label;
+                                        return `${context.label}: ${label}`;
                                     }
                                 }
                             }
